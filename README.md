@@ -24,7 +24,7 @@ Included Files:
 Concatenated_alignment_rbcl+rps4+trnlf+atpb.nex
 Description: Alignment of DNA sequences from five plastid regions: 1) the rbcL gene, 2) the rps4 gene and the rps4-trnS intergenic spacer, 3) the trnL intron with short portions of the trnL and trnF genes, 4) the trnL-trnF intergenic spacer, and 4) the atpB gene.
 Format: Text file (.nex)
-Function: Used as an input for Bayesian inference analysis conducted with BEAST software.
+Function: Used as an input for Bayesian inference analysis conducted with the BEAST software.
 Creation Date: 2025-10-12
 
 Distribution map of the study species_ Input data for the Infomap bioregion.tiff
@@ -33,12 +33,6 @@ Format: Image file (.tiff)
 Function: Data used to delimit bioregions with the Infomap Bioregions web application.
 Creation Date: 2023-06-18
 
-Polypodiaceae_estimate_time_divergence.trees
-Description: Raw output file from the Bayesian inference analysis using BEAST; all 10,000 trees before burnin.
-Format: Phylogenetic tree file (.trees)
-Function: Used to generate a Maximum Credibility Tree used an input for biogeographic analysis in BioGeoBEARS
-Creation Date: 2026-03-19
-
 Polypodiaceae_MaximumCredibilityTree.tre
 Description
 Format: Phylogenetic tree file (.tre)
@@ -46,7 +40,7 @@ Function: Used as an input for biogeographic analyses in BioGeoBEARS.
 Creation Date: 2026-03-19
 
 Polypodiaceae_Multispecies_ocurrence_Table.txt
-Description: Presence-absence matrix of all target species occurrences in each coded bioregion, downloaded from GBIF. The DOI of each download can be found as supplementary material of the article.
+Description: Presence-absence matrix of all target species occurrences in each coded bioregion, downloaded from GBIF. The DOI of each download can be found as supplementary material of the article. 
 Format: Text file (.txt)
 Function: Used as an input for biogeographic analysis in BioGeoBEARS.
 Creation Date: 2023-09-11
@@ -66,18 +60,18 @@ Creation Date: 2026-03-17
 Script_BioGeoBEARs_BSM
 Description: R code.
 Format: R Script (.R)
-Function: R code used for run BioGeoBEARS (BioGeography with Bayesian (and likelihood) Evolutionary Analysis in R Scripts) and Biogeographical Stochastic Mapping (BSM) analyses.
+Function: R code used for running BioGeoBEARS (BioGeography with Bayesian (and likelihood) Evolutionary Analysis in R Scripts) and Biogeographical Stochastic Mapping (BSM) analyses.
 Creation Date: 2026-03-17
 
 Citation:
-'edeiros, M.B.& Almeida T.E.(2025). Evolutionary and Biogeographic History of Disjunct Species of Polypodiaceae between the Neotropics and the Afrotropics. SciELO Data. DOI: https://doi.org/10.48331/scielodata.YHVLLZ'
+'Medeiros, M.B.& Almeida T.E.(2025). Evolutionary and Biogeographic History of Disjunct Species of Polypodiaceae between the Neotropics and the Afrotropics. SciELO Data. DOI: https://doi.org/10.48331/scielodata.YHVLLZ'
 
 Methodological Information:
 
-Data Collection:
+Data Collection: 
 The dataset was delineated based on the floristic hypotheses of disjunct species proposed by Moran and Smith (2001), which describe patterns of morphological similarity among species of the Polypodiaceae family in neotropical and afrotropical regions. We obtained genetic sequences from five plastid regions (rbcL, rps4, rps4-trnS, trnL-trnF, and atpB) from the GenBank database to test these hypotheses. Geographic occurrence data were extracted from the Global Biodiversity Information Facility (GBIF) platform and processed to remove duplicates and records with incomplete or incorrect information.
 
-Data Processing:
+Data Processing: 
 DNA sequences were individually aligned using MEGA XI software with the MUSCLE algorithm. Manual adjustments were made to the alignments, and the best substitution models were selected using jModelTest v2.1.10. Subsequently, the sequences were concatenated using SequenceMatrix v1.9. For phylogenetic inferences, we utilized BEAUti to configure the alignments, substitution models, and time calibrations based on two fossils. Inferences were conducted with BEAST, employing the relaxed clock model and Birth-Death tree. After running 10 million generations, the generated trees were evaluated using Tracer v1.7.1, discarding the first 10% as burn-in. The maximum credibility topology was then obtained with TreeAnnotator, and this topology was used in subsequent biogeographic inferences.
 
 For the biogeographic analysis, species occurrence data were refined using the Wallace v2.0.5 package in R and QGIS. After processing, a presence-absence matrix of species by bioregion was generated and used as input for the biogeographic analysis in BioGeoBEARS. We employed the DEC, DIVALIKE, and BAYAREALIKE models, with comparisons based on the corrected Akaike Information Criterion (AICc), and biogeographic events were estimated through Stochastic Biogeographic Mapping (BSM).
@@ -108,7 +102,7 @@ Benton MJ, Wilf P, Sauquet H. 2022. The Angiosperm Terrestrial Revolution and th
 
 Darriba D, Taboada GL, Doallo R, Posada D. 2012. jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8): 772. DOI: 10.1038/nmeth.2109
 
-Kass JM, Pinilla-Buitrago GE, Paz A, et al. 2022. Wallace 2: a shiny app for modeling species niches and distributions redesigned to facilitate expansion
+Kass JM, Pinilla-Buitrago GE, Paz A, et al. 2023. Wallace 2: a shiny app for modeling species niches and distributions redesigned to facilitate expansion via module contributions. Ecography 2023(3): e06547. doi:  https://doi.org/10.1111/ecog.06547.
 
 Matzke NJ. 2016. Stochastic mapping under biogeographical models. Available at: PhyloWiki BioGeoBEARS. http://phylo.wikidot.com/biogeobears#stochastic_mapping. 11 Nov. 2023 (Date of last successful access)
 
