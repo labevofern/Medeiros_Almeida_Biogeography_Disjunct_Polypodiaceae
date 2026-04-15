@@ -23,45 +23,78 @@ Included Files:
 
 Concatenated_alignment_rbcl+rps4+trnlf+atpb.nex
 Description: Alignment of DNA sequences from five plastid regions: 1) the rbcL gene, 2) the rps4 gene and the rps4-trnS intergenic spacer, 3) the trnL intron with short portions of the trnL and trnF genes, 4) the trnL-trnF intergenic spacer, and 4) the atpB gene.
+
 Format: Text file (.nex)
+
 Function: Used as an input for Bayesian inference analysis conducted with the BEAST software.
+
 Creation Date: 2025-10-12
 
+
 Distribution map of the study species_ Input data for the Infomap bioregion.tiff
+
 Description: Image showing the global distribution of the target species.
+
 Format: Image file (.tiff)
+
 Function: Data used to delimit bioregions with the Infomap Bioregions web application.
+
 Creation Date: 2023-06-18
 
+
 Polypodiaceae_MaximumCredibilityTree.tre
-Description
+
+Description: Maximum Credibility Tree from Divergence Estimate Time analysis.
+
 Format: Phylogenetic tree file (.tre)
+
 Function: Used as an input for biogeographic analyses in BioGeoBEARS.
+
 Creation Date: 2026-03-19
 
 Polypodiaceae_Multispecies_ocurrence_Table.txt
+
 Description: Presence-absence matrix of all target species occurrences in each coded bioregion, downloaded from GBIF. The DOI of each download can be found as supplementary material of the article. 
+
 Format: Text file (.txt)
+
 Function: Used as an input for biogeographic analysis in BioGeoBEARS.
+
 Creation Date: 2023-09-11
 
+
 resBAYAREALIKE+J_50BSMs_v1.pdf
+
 Description: The 50 resulting trees from the Biogeographical Stochastic Mapping (BSM) analysis.
+
 Format: Portable Document Format (.pdf)
+
 Function: Output of the Biogeographical Stochastic Mapping (BSM) analysis, for visualization.
+
 Creation Date: 2026-03-17
+
 
 resBAYAREALIKE+J_50BSMs_v1.gif
+
 Description: It is the animated visualization of the 50 trees from the file resBAYAREALIKE+J_50BSMs_v1.pdf.
+
 Format: Graphic Interchange Format (.gif)
+
 Function: Illustrative, for visualization.
+
 Creation Date: 2026-03-17
 
+
 Script_BioGeoBEARs_BSM
+
 Description: R code.
+
 Format: R Script (.R)
+
 Function: R code used for running BioGeoBEARS (BioGeography with Bayesian (and likelihood) Evolutionary Analysis in R Scripts) and Biogeographical Stochastic Mapping (BSM) analyses.
+
 Creation Date: 2026-03-17
+
 
 Citation:
 'Medeiros, M.B.& Almeida T.E.(2025). Evolutionary and Biogeographic History of Disjunct Species of Polypodiaceae between the Neotropics and the Afrotropics. SciELO Data. DOI: https://doi.org/10.48331/scielodata.YHVLLZ'
